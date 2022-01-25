@@ -1,7 +1,6 @@
 import { FcLinux } from "react-icons/fc";
 import { GoGraph } from "react-icons/go";
 import { FaGamepad, FaCode } from "react-icons/fa";
-import GameDev from "./pages/GameDev";
 
 const SideBar = () => {
   return (
