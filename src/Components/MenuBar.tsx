@@ -1,6 +1,7 @@
 import { FcLinux } from "react-icons/fc";
 import { GoGraph } from "react-icons/go";
 import { FaGamepad, FaCode } from "react-icons/fa";
+import {NavLink} from "react-router-dom";
 
 const SideBar = () => {
   return (
@@ -15,10 +16,10 @@ const SideBar = () => {
 
 const SideBarIcon = ({ icon = <FcLinux />, text = "tooltip", Path = "/" }) => {
   return (
-      <div className="sidebar-icon group">
+      <NavLink to={Path} className="sidebar-icon group">
         {icon}
         <span className="sidebar-tooltip group-hover:scale-100">{text}</span>
-      </div>
+      </NavLink>
   );
 };
 
