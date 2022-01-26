@@ -1,5 +1,5 @@
 module.exports = {
-  mode: 'aot',
+  mode: 'jit',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
