@@ -15,16 +15,17 @@ const Content = () => {
     </AnimatePresence>
   );
 };
-export const AnimatedPage = ({html = <div></div>}) => {
-    return(
-  <motion.div
-    initial={{ x: -100 }}
-    animate={{ x: 0 }}
-    exit={{ x: 4000 }}
-  >
+
+export const AnimatedPage = ({ html = <div></div> }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       {html}
-  </motion.div>
-    );
+    </motion.div>
+  );
 };
 
 export default Content;

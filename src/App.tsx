@@ -1,5 +1,5 @@
-import './App.css'
-import SideBar from './Components/MenuBar'
+import "./App.css";
+import SideBar from "./Components/MenuBar";
 import Content from "./Components/Content";
 
 function App() {
@@ -9,8 +9,8 @@ function App() {
     <div className="App">
       <Content />
       <SideBar />
-     </div>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
