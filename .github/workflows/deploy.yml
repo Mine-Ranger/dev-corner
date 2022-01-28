@@ -11,21 +11,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone Repository
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       - name: Installing Node
-      - uses: actions/setup-node@v1
+        uses: actions/setup-node@v1
         with:
           node-version: 17
 
-      - name: Installing dependencies
       - run: yarn
-
-      - name: Building the website
       - run: yarn run build
-
       - name: Deploying the website
-      - uses: crazy-max/ghaction-github-pages@v1
+        uses: crazy-max/ghaction-github-pages@v1
         with:
           target_branch: gh-pages
           build_dir: dist
