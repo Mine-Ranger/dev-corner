@@ -10,9 +10,22 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Clone Repository
       - uses: actions/checkout@v2
+
+      - name: Installing Node
       - uses: actions/setup-node@v1
         with:
-          node-version: 17
+          node-version: "17.x"
+
+      - name: Installing dependencies
       - run: yarn
-      - run: yarn run deploy
+
+      - name: Building the website
+      - run: yarn run build
+
+      - name: Deploying the website
+        uses: crazy-max/ghaction-github-pages@v1
+        with:
+          target_branch: gh-main
+          build_dir: dist
