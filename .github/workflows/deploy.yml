@@ -4,7 +4,7 @@ name: Deploy website to github pages
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
