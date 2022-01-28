@@ -9,7 +9,7 @@ const WebDev = () => {
         <div>
           <TopHeading text="Web Development" />
           <div>This is web dev</div>
-          <Snippet />
+          <Snippet text="curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash" />
         </div>
       }
     />
