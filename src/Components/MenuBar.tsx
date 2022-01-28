@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const SideBar = () => {
   return (
     <>
-      <div className="fixed top-0 left-o h-screen w-20 m-0 flex flex-col bg-cyan-700 text-white shadow-lg">
+      <div className="fixed top-0 left-o h-screen w-20 m-0 flex flex-col bg-gray-800 shadow-lg">
         <SideBarIcon icon={<FaCode size="28" />} text="Web" Path="/web" />
         <SideBarIcon icon={<FaGamepad size="28" />} text="Game" Path="/game" />
         <SideBarIcon icon={<GoGraph size="28" />} text="ML" Path="/ml" />
