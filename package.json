@@ -8,7 +8,7 @@
     "format_project": "prettier --write .",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "yarn run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
@@ -23,6 +23,7 @@
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7",
     "autoprefix": "^1.0.1",
+    "autoprefixer": "^10.4.2",
     "gh-pages": "^3.2.3",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",
