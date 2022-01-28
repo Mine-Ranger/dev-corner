@@ -16,7 +16,7 @@ jobs:
       - name: Installing Node
       - uses: actions/setup-node@v1
         with:
-          node-version: "17.x"
+          node-version: 17
 
       - name: Installing dependencies
       - run: yarn
@@ -25,7 +25,7 @@ jobs:
       - run: yarn run build
 
       - name: Deploying the website
-        uses: crazy-max/ghaction-github-pages@v1
+      - uses: crazy-max/ghaction-github-pages@v1
         with:
-          target_branch: gh-main
+          target_branch: gh-pages
           build_dir: dist
