@@ -9,7 +9,7 @@ const WebDev = () => {
         <div>
           <TopHeading text="Web Development" />
           <div>This is web dev</div>
-          <Snippet/>
+          <Snippet />
         </div>
       }
     />
